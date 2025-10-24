@@ -11,7 +11,8 @@ public class Sampleee {
 		chromeOptions.addArguments("--headless");
 		WebDriver driver = new ChromeDriver(chromeOptions);
 		driver.get("https://www.omrbranch.com/");
-		System.out.println(driver.findElement(By.cssSelector(".btn.btn-training")).getText());
+		System.out.println(driver.findElement(By.cssSelector("#email")).getText());
+		System.out.println("Sample");
 	}
 
 }
